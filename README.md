@@ -1,6 +1,6 @@
 # Ellen::Idobata
 
-TODO: Write a gem description
+Idobata adapter for Ellen.
 
 ## Installation
 
@@ -15,10 +15,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install ellen-idobata
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
