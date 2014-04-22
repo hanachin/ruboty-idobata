@@ -1,20 +1,28 @@
 # Ellen::Idobata
 
-Idobata adapter for Ellen.
+Idobata adapter for [Ellen](https://github.com/r7kamura/ellen).
 
-## Installation
+## Usage
+Get your idobata bots api token
 
-Add this line to your application's Gemfile:
+- from organization setting page: https://idobata.io/#/organization/YOUR_ORGANIZATION/bots
+- or room setting page: https://idobata.io/#/organization/YOUR_ORGANIZATION/room/YOUR_ROOM/settings
 
-    gem 'ellen-idobata'
+``` ruby
+# Gemfile
+gem 'ellen-idobata'
+```
 
-And then execute:
+## ENV
 
-    $ bundle
+```
+    IDOBATA_URL                    - Idobata url
+    IDOBATA_PUSHER_KEY             - Idobata's pusher key
+    IDOBATA_API_TOKEN              - Idobata bots api token
+```
 
-Or install it yourself as:
-
-    $ gem install ellen-idobata
+## Screenshot
+![](https://raw.githubusercontent.com/hanachin/ellen-idobata/master/images/screenshot.png)
 
 ## Contributing
 
