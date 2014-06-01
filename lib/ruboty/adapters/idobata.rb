@@ -159,7 +159,11 @@ module Ruboty
         channel.bind('message_created') do |message_json|
           message = JSON.parse(message_json)['message']
           @last_room_id = message['room_id']
-          robot.receive(body: message['body_plain'])
+          robot.receive(
+            body: message['body_plain'],
+            from: message['sender_id'],
+            from_name: message['sender_name']
+          )
         end
       end
 
