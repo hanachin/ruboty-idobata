@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ellen/idobata/version'
+require 'ruboty/idobata/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "ellen-idobata"
-  spec.version       = Ellen::Idobata::VERSION
+  spec.name          = "ruboty-idobata"
+  spec.version       = Ruboty::Idobata::VERSION
   spec.authors       = ["Seiei Higa"]
   spec.email         = ["hanachin@gmail.com"]
-  spec.summary       = %q{Idobata adapter for Ellen.}
-  spec.homepage      = "https://github.com/hanachin/ellen-idobata"
+  spec.summary       = %q{Idobata adapter for Ruboty.}
+  spec.homepage      = "https://github.com/hanachin/ruboty-idobata"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
