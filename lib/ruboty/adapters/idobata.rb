@@ -22,9 +22,10 @@ module Ruboty
         connect
       end
 
-      def say(source)
+      def say(message)
+        pp message
         req = Net::HTTP::Post.new(idobata_messages_url.path, headers)
-        req.form_data = { 'message[room_id]' => @last_room_id, 'message[source]' => source }
+        req.form_data = { 'message[room_id]' => message[:original][:room_id], 'message[source]' => message[:body] }
         https = Net::HTTP.new(idobata_messages_url.host, idobata_messages_url.port)
         https.use_ssl = true
         https.start {|https| https.request(req) }
@@ -158,8 +159,13 @@ module Ruboty
       def listen
         channel.bind('message_created') do |message_json|
           message = JSON.parse(message_json)['message']
-          @last_room_id = message['room_id']
-          robot.receive(body: message['body_plain'])
+          robot.receive(
+            body: message['body_plain'],
+            from: message['sender_id'],
+            from_name: message['sender_name'],
+            room_id: message['room_id'],
+            room_name: message['room_name']
+          )
         end
       end
 
