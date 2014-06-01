@@ -1,2 +1,2 @@
-require "ellen/adapters/idobata"
-require "ellen/idobata/version"
+require "ruboty/adapters/idobata"
+require "ruboty/idobata/version"

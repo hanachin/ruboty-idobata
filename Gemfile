@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in ellen-idobata.gemspec
+# Specify your gem's dependencies in ruboty-idobata.gemspec
 gemspec

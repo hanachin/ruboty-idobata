@@ -1,6 +1,6 @@
-# Ellen::Idobata
+# Ruboty::Idobata
 
-Idobata adapter for [Ellen](https://github.com/r7kamura/ellen).
+Idobata adapter for [Ruboty](https://github.com/r7kamura/ruboty).
 
 ## Usage
 Get your idobata bots api token
@@ -10,7 +10,7 @@ Get your idobata bots api token
 
 ``` ruby
 # Gemfile
-gem 'ellen-idobata'
+gem 'ruboty-idobata'
 ```
 
 ## ENV
@@ -22,11 +22,11 @@ gem 'ellen-idobata'
 ```
 
 ## Screenshot
-![](https://raw.githubusercontent.com/hanachin/ellen-idobata/master/images/screenshot.png)
+![](https://raw.githubusercontent.com/hanachin/ruboty-idobata/master/images/screenshot.png)
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/ellen-idobata/fork )
+1. Fork it ( http://github.com/<my-github-username>/ruboty-idobata/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

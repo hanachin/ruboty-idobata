@@ -4,7 +4,7 @@ require 'open-uri'
 require 'pp'
 require 'pusher-client'
 
-module Ellen
+module Ruboty
   module Adapters
     class Idobata < Base
       include Mem
@@ -68,7 +68,7 @@ module Ellen
       def headers
         {
           'X-API-Token' => idobata_api_token,
-          'User-Agent'  => "ellen-idobata / v#{Ellen::Idobata::VERSION}"
+          'User-Agent'  => "ruboty-idobata / v#{Ruboty::Idobata::VERSION}"
         }
       end
 

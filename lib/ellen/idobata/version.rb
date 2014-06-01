@@ -1,4 +1,4 @@
-module Ellen
+module Ruboty
   module Idobata
     VERSION = "0.0.1"
   end
