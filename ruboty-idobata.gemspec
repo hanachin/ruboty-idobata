@@ -17,6 +17,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.required_ruby_version = ">= 2.1.0"
   spec.add_dependency "ruboty", "~> 1.0.1"
   spec.add_dependency "pusher-client", "~> 0.5.0"
   spec.add_development_dependency "bundler", "~> 1.5"
