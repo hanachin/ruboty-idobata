@@ -10,6 +10,7 @@ Get your idobata bots api token
 
 ``` ruby
 # Gemfile
+ruby '2.1.2'
 gem 'ruboty-idobata'
 ```
 
