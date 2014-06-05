@@ -23,7 +23,10 @@ gem 'ruboty-idobata'
 ```
 
 ## Screenshot
+
 ![](https://raw.githubusercontent.com/hanachin/ruboty-idobata/master/images/screenshot.png)
+
+Notice: _The default robot name is `ruboty`, so if you want to use another name(e.x. `ellen`), you must be set `ROBOT_NAME` environment variable._
 
 ## Contributing
 
