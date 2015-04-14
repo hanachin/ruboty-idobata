@@ -157,7 +157,7 @@ module Ruboty
 
       memoize\
       def listen
-        channel.bind('message_created') do |message_json|
+        channel.bind('message:created') do |message_json|
           message = JSON.parse(message_json)['message']
           robot.receive(
             body: message['body_plain'],
@@ -171,7 +171,7 @@ module Ruboty
 
       memoize\
       def log_message
-        channel.bind('message_created') do |message_json|
+        channel.bind('message:created') do |message_json|
           pp JSON.parse message_json
         end
       end
