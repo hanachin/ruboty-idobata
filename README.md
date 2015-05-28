@@ -1,6 +1,7 @@
 # Ruboty::Idobata
 
 Idobata adapter for [Ruboty](https://github.com/r7kamura/ruboty).
+ruboty-idobata requires Ruby 2.1 or later.
 
 ## Usage
 Get your idobata bots api token
