@@ -25,7 +25,7 @@ module Ruboty
       def say(message)
         pp message
         req = Net::HTTP::Post.new(idobata_messages_url.path, headers)
-        req.form_data = { 'message[room_id]' => message[:original][:room_id], 'message[source]' => message[:body] }
+        req.form_data = { 'message[room_id]' => message[:original][:room_id], 'message[source]' => message[:body], 'message[format]' => 'markdown' }
         https = Net::HTTP.new(idobata_messages_url.host, idobata_messages_url.port)
         https.use_ssl = true
         https.start {|https| https.request(req) }
