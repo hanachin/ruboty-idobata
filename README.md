@@ -24,7 +24,7 @@ gem 'ruboty-idobata'
 
 ## Screenshot
 
-![](https://raw.githubusercontent.com/yasslab/ruboty-idobata/master/images/screenshot.png)
+![SS](https://raw.githubusercontent.com/yasslab/ruboty-idobata/master/images/screenshot.png)
 
 Notice: _The default robot name is `ruboty`, so if you want to use another name(e.x. `ellen`), you must be set `ROBOT_NAME` environment variable._
 
@@ -39,5 +39,7 @@ Notice: _The default robot name is `ruboty`, so if you want to use another name(
 ## License
 
 Copyright &copy; 2014-2015 [YassLab](http://yasslab.jp)
+
+[![YassLab Logo](https://dl.dropboxusercontent.com/u/2819285/yasslab_logo_copy.png)](http://yasslab.jp)
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
